@@ -7,6 +7,14 @@
           "type" : "runScript"
         }
       ]
+    },
+    "clean" : {
+      "postActions" : [
+        {
+          "script" : "deactivate",
+          "type" : "runScript"
+        }
+      ]
     }
   },
   "extension" : {
@@ -15,7 +23,7 @@
   },
   "extensionTemplate" : "pythonDebug",
   "extensionValues" : {
-    "python.debug.script" : "app.py"
+    "python.debug.script" : "index.py"
   },
   "openLogOnRun" : "fail"
 }
